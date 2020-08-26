@@ -16,7 +16,7 @@ app.use(cookieParser());
 app.use(indexRouter);
 
 const web = new WebClient(
-  "xoxb-1317310592246-1320978401237-EhD2Ym4YPM4I2L41FcjlWPvd" // each workspace has one of these and its needed to send messages without firing commands like notifications
+  process.env.WORKSPACE_TOKEN // each workspace has one of these and its needed to send messages without firing commands like notifications
 );
 
 const currentTime = new Date().toTimeString();

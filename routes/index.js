@@ -12,7 +12,7 @@ router.post("/subscribe", (req, res) => {
   // How the request body looks like
   /*
     {
-      token: 'ISbiV08YPzUlRSInnUQInCfe',
+      token: 'someToken',
       team_id: 'T019B94HE78',
       team_domain: 'whatever-qmv6296',
       channel_id: 'C01A7RWR02C',
@@ -69,7 +69,7 @@ router.get("/redirect", async (req, res) => {
         authed_user: { id: 'U019JUHLE75' },
         scope: 'chat:write,commands',
         token_type: 'bot',
-        access_token: 'xoxb-1321677818261-1331133011492-b8I0dbGd9zOXAUBj94bYLOVy',
+        access_token: 'xoxb-whatever',
         bot_user_id: 'U019R3X0BEG',
         team: { id: 'T019FKXQ27P', name: 'idk' },
         enterprise: null
